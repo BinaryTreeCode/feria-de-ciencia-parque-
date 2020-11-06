@@ -1,0 +1,11 @@
+html {
+    font-size: 10px;
+}
+.simple-text {
+    font-size: 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  

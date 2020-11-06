@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Tu temperatura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
     <script>
         var indicación;
-        var TemperaturaDelUsuario = parseInt(prompt("¿Cuál es tu temperatura?"));
+        var TemperaturaDelUsuario = parseInt(prompt("¿Cuál es tu temperatura?🌡️"));
         if(TemperaturaDelUsuario >= 38){
-            indicación = ("no puedes pasar tienes la temperatura muy alta para entrar");
+            indicación = ("no puedes Ingresar al parque tu temperatura muy alta❌");
         }else{
-            indicación = ("puedes pasar");
+            indicación = ("puedes Ingresar al parque✔️");
         }
-        document.write("Tu temperatura " + " es <strong>" + TemperaturaDelUsuario + "°C</strong> " + indicación);
+
+
+        document.write("<p class='simple-text'>Tu temperatura " + " es <strong>" + TemperaturaDelUsuario + "°C</strong> " + indicación+"</p>");
     </script>
 </head>
 <body>
