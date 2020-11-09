@@ -1,11 +1,44 @@
-html {
+    @media (min-width: 30px) {
+        html {
     font-size: 10px;
 }
 .simple-text {
     font-size: 3rem;
     margin: auto;
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20%;
+    padding: 10px,;
     }
-  
+    } 
+
+    @media (min-width: 400px) {
+        html {
+            font-size: 10px;
+        }
+        .simple-text {
+            font-size: 3rem;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25%;
+            margin-left: 7%;
+            padding: 10px;
+            } 
+            }
+
+    @media (min-width: 1024px) {
+        html {
+            font-size: 10px;
+        }
+        .simple-text {
+            font-size: 3rem;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+            padding: 10px; 
+            padding: solid red;
+            } 
+    }
