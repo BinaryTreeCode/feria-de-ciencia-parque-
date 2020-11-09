@@ -9,12 +9,19 @@
         var indicación;
         var TemperaturaDelUsuario = parseInt(prompt("¿Cuál es tu temperatura?🌡️"));
         if(TemperaturaDelUsuario >= 38){
-            indicación = ("no puedes Ingresar al parque tu temperatura es muy alta❌");
-        }else{
-            indicación = ("puedes Ingresar al parque✔️");
+            indicación = (" no puedes Ingresar al parque tu temperatura es muy alta❌");
+        }
+        
+        else if(TemperaturaDelUsuario <= 38)
+        {
+            indicación = (" puedes Ingresar al parque✔️");
         }
 
-        document.write("<p class='simple-text'>Tu temperatura " + " <strong>" + TemperaturaDelUsuario + "°C</strong> " + indicación+"</p>");
+        else {
+            indicación = (" ⚠️Error vuelva  a tomar la prueva de temperatura ⚠️ ");
+        }
+
+        document.write("<p class='simple-text'>Tu temperatura es :" + " <strong>" + TemperaturaDelUsuario + "°C</strong> " + indicación+"</p>");
     </script>
 </head>
 <body>
